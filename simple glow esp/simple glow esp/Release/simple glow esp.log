@@ -1,0 +1,7 @@
+﻿  main.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 9 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+C:\Users\hacke\Desktop\simple glow esp\simple glow esp\offsets.h(40): warning C4715: 'GetModuleBaseAddress': not all control paths return a value
+  Finished generating code
+  simple glow esp.vcxproj -> C:\Users\hacke\Desktop\simple glow esp\Release\simple glow esp.exe
