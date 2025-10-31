@@ -32,7 +32,7 @@ int main()
 		// loop through entity
 		for (int i = 1; i < 64; i++)
 		{
-			uintptr_t dwEntity = RPM<uintptr_t>(moduleBase + offsets::dwEntityList + i * 0x10); // // tiap entity berikutnya didalam game harus dikali 10! (contoh: tempatke1 adalah 0, tempatke2 adalah 10, tempatke2 adalah 20, dst)
+			uintptr_t dwEntity = RPM<uintptr_t>(moduleBase + offsets::dwEntityList + i * 0x10); // // tiap entity berikutnya didalam game, jaraknya 10! (contoh: tempatke1 adalah 0, tempatke2 adalah 10, tempatke2 adalah 20, dst)
 
 			int iGlowIndex = RPM<int>(dwEntity + offsets::m_iGlowIndex);
 			int enemyHealth = RPM<int>(dwEntity + offsets::m_iHealth);
@@ -69,4 +69,5 @@ int main()
 	}
 
 	return 0;
+
 }
